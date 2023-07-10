@@ -2,13 +2,13 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   labels:
-    app: bubble-animation2
-  name: bubble-animation2
-  namespace: bubble-animation2
+    app: bubble-animation-mohan
+  name: bubble-animationm-mohan
+  namespace: bubble-animation-mohan
 spec:
   port:
     targetPort: 8080
   to:
     kind: Service
-    name: bubble-animation2
+    name: bubble-animation-mohan
     weight: 100

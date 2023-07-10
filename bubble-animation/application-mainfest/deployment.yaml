@@ -3,23 +3,23 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: bubble-animation2
-  name: bubble-animation2
-  namespace: bubble-animation2
+    app: bubble-animation-mohan
+  name: bubble-animation-mohan
+  namespace: bubble-animation-mohan
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bubble-animation2
+      app: bubble-animation-mohan
   strategy: {}
   template:
     metadata:
       labels:
-        app: bubble-animation2
+        app: bubble-animation-mohan
     spec:
       containers:
       - image: quay.io/rhdevelopers/bgd:1.0.0
-        name: bubble-animation2
+        name: bubble-animation-mohan
         env:
         - name: COLOR
           value: "blue"
