@@ -3,13 +3,13 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: bubble-animation
-  name: bubble-animation
-  namespace: bubble-animation
+    app: bubble-animation2
+  name: bubble-animation2
+  namespace: bubble-animation2
 spec:
   ports:
   - port: 8080
     protocol: TCP
     targetPort: 8080
   selector:
-    app: bubble-animation
+    app: bubble-animation2
